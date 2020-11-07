@@ -5,8 +5,8 @@ import useLoadSdk from './useLoadSdk'
 import useToken from './useToken'
 
 const SpotifyWrapper = ({ children }) => {
-  useLoadSdk();
-  const token = useToken();
+  useLoadSdk()
+  const token = useToken()
   const { deviceId } = useDevice({ token })
   const contextValue = useMemo(() => ({ deviceId, token }), [token, deviceId])
 

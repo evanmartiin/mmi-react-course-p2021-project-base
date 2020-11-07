@@ -1,7 +1,9 @@
 const { useEffect, useState } = require("react")
 
 const useDevice = ({ token }) => {
+
   const [deviceId, setDeviceId] = useState(null);
+  
   useEffect(() => {
     window.onSpotifyWebPlaybackSDKReady = () => {
       const player = new window.Spotify.Player({
