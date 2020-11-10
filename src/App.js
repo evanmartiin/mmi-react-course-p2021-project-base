@@ -6,6 +6,7 @@ import Profile from 'pages/Profile'
 import Player from 'pages/Player'
 import Login from 'pages/Login'
 import Signup from 'pages/Signup'
+import Form from 'pages/Form'
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/signup">
           <Signup />
+        </Route>
+        <Route path="/form">
+          <Form />
         </Route>
         <Route path="/">
           <Home />
