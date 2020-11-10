@@ -4,6 +4,8 @@ import Home from 'pages/Home'
 import Search from 'pages/Search'
 import Profile from 'pages/Profile'
 import Player from 'pages/Player'
+import Login from 'pages/Login'
+import Signup from 'pages/Signup'
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
         </Route>
         <Route path="/player">
           <Player />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/signup">
+          <Signup />
         </Route>
         <Route path="/">
           <Home />

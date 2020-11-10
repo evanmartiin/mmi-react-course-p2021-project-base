@@ -8,7 +8,6 @@ const Layout = (props) => {
   const { children } = props;
   return (
     <div className="layout">
-      <img className="Background"src={Background} alt="image de fond"></img>
       <Menu />
       {children} 
     </div>
