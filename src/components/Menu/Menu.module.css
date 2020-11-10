@@ -1,15 +1,14 @@
-.header {
-  background-color: black;
-  display: flex;
-  color: gray;
-  align-items: center;
-  padding: 1em;
-}
-
 .menu {
+  background-color: #14274E;
+  color: #F1F6F9;
   display: flex;
-  list-style: none;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  list-style: none;
 }
 
 .menuItem {
