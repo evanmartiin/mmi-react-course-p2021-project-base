@@ -9,4 +9,11 @@
   background-size: cover;
   background-position: 50% 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.return {
+  width: 20px;
+  padding: 30px;
+  position: absolute;
 }

@@ -2,12 +2,17 @@ import React from 'react'
 import Menu from '../Menu'
 import PropTypes from 'prop-types'
 
+import Img1 from '../../assets/images/return-white.png'
+
 import './styles.css'
 
 const Layout = (props) => {
-  const { children, removeMenu } = props;
+  const { children, removeMenu, removeReturn } = props;
   return (
     <div className="layout">
+      {removeReturn === false &&
+        <img className="return" src={Img1} alt="Retour"></img>
+      }
       {removeMenu === false &&
         <Menu />
       }
@@ -17,11 +22,13 @@ const Layout = (props) => {
 }
 
 Layout.defaultProps = {
-  removeMenu: false
+  removeMenu: false,
+  removeReturn: false
 }
 
 Layout.propTypes = {
-  removeMenu: PropTypes.bool.isRequired
+  removeMenu: PropTypes.bool.isRequired,
+  removeReturn: PropTypes.bool.isRequired
 }
 
 export default Layout

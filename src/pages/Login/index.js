@@ -9,9 +9,11 @@ const Login = () => {
         <div>
             <Layout removeMenu>
                 <div className="loginForm">
-                    <Input type="email" placeholder="Mail" label="Adresse mail :"/>
+                    <div className="marginInput">
+                        <Input type="email" placeholder="Mail" label="Adresse mail :"/>
+                    </div>
                     <Input type="password" placeholder="Mot de passe" label="Mot de passe :"/>
-                    Mot de passe oublié
+                    <p className="forgetPass">Mot de passe oublié</p>
                 </div>
             </Layout>
         </div>
