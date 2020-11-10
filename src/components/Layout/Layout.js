@@ -1,6 +1,5 @@
 import React from 'react'
 import Menu from '../Menu'
-import Background from '../../assets/images/background-image.png'
 
 import './styles.css'
 

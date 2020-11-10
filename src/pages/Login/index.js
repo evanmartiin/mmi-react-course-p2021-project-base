@@ -8,6 +8,7 @@ const Login = () => {
             <Layout>
                 Login
                 <Input type="password"/>
+                <Input type="email"/>
             </Layout>
         </div>
     );

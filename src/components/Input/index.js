@@ -5,7 +5,7 @@ import './styles.css'
 const Input = (props) => {
   const { type } = props;
   return (
-    <input type={type}></input>
+    <input className="input" type={type}></input>
   )
 }
 
