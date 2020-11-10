@@ -5,9 +5,10 @@ import Input from '../../components/Input/index'
 const Login = () => {
     return (
         <div>
-            <Layout>
+            <Layout removeMenu>
                 Login
                 <Input type="password"/>
+                <Input type="email"/>
             </Layout>
         </div>
     );
