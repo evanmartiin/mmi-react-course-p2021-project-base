@@ -3,6 +3,7 @@ import './App.css'
 import Home from 'pages/Home'
 import Search from 'pages/Search'
 import Profile from 'pages/Profile'
+import Player from 'pages/Player'
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/profile">
           <Profile />
+        </Route>
+        <Route path="/player">
+          <Player />
         </Route>
         <Route path="/">
           <Home />
