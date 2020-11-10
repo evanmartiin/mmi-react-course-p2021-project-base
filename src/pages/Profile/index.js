@@ -7,7 +7,6 @@ const Profile = () => {
         <Layout>
             Profile
         </Layout>
-            
         </div>
     );
 }
