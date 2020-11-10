@@ -4,8 +4,6 @@ import styles from './Menu.module.css'
 
 const Menu = () => {
   return (
-    <div className={styles.header}>
-      Sleepy
       <ul className={styles.menu}>
         <li>
           <Link to="/home" className={styles.menuItem}>Accueil</Link>
@@ -17,7 +15,6 @@ const Menu = () => {
           <Link to="/profile" className={styles.menuItem}>Moi</Link>
         </li>
       </ul>
-    </div>
   )
 }
 
