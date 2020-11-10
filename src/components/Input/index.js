@@ -3,11 +3,9 @@ import React from 'react'
 import './styles.css'
 
 const Input = (props) => {
-  const { children } = props;
+  const { type } = props;
   return (
-    <div className="layout">
-        
-    </div>
+    <input type={type}></input>
   )
 }
 

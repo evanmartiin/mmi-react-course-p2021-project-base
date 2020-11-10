@@ -10,13 +10,3 @@
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-
-.Background {
-  min-height: 100vh;
-  min-width: 100vw;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-

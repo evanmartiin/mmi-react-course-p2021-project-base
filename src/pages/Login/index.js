@@ -1,13 +1,14 @@
 import React from 'react'
-// import Layout from '../../components/Layout/Layout'
+import Layout from '../../components/Layout/Layout'
+import Input from '../../components/Input/index'
 
 const Login = () => {
     return (
         <div>
-            {/* <Layout> */}
+            <Layout>
                 Login
                 <Input type="password"/>
-            {/* </Layout> */}
+            </Layout>
         </div>
     );
 }
