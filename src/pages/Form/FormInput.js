@@ -1,10 +1,24 @@
-import React from React
+import React, { useState } from 'react'
+import styles from './FormInput.module.css'
 
 const FormInput = (props) => {
-    const { children } = props;
+    const {children} = props
+
+    const [isLiked,updateIsLiked] = useState(false)
+
+    const toggleLike = () => {
+        updateIsLiked(!isLiked)
+    }
     return (
-        { children }
+        <div>
+            <button type="button" className={isLiked ? styles.isLikedTrue : styles.isLikedFalse} onClick={toggleLike}>
+            <p>{isLiked ? 'true' : 'false'}</p>
+                {children}
+            </button>
+        </div>
     )
 }
+
+
 
 export default FormInput
