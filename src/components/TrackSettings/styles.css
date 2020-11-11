@@ -1,0 +1,12 @@
+.trackSettingsIcon {
+    background-color: transparent;
+    border: none;
+}
+
+.trackSettingsIcon:focus {
+    outline: none;
+}
+
+.trackSettingsIcon img {
+    height: 4vh;
+}
