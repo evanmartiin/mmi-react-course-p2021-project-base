@@ -2,6 +2,7 @@ import React from 'react'
 import FormInput from './FormInput'
 import Layout from '../../components/Layout/Layout'
 import styles from './styles.css'
+import Button from '../../components/Button'
 
 const Form = () => {
     return (
@@ -32,6 +33,7 @@ const Form = () => {
                 <FormInput>
                     Histoires pour enfants
                 </FormInput>
+                <Button>Endors toi</Button>
             </div>
         </Layout>
     )
