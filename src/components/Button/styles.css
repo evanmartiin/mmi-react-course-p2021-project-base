@@ -1,10 +1,15 @@
-button {
+.largeButton {
     background-color: #F1F6F9;
     color: #14274E;
-    height: 7vh;
-    width: 40vw;
+    height: 15vw;
+    width: 50vw;
     border: 0px solid;
     border-radius: 30px;
     font: 20px "Montserrat Bold";
     margin-top: 50px;
+}
+
+.largeButton img {
+    height: 5vw;
+    margin-left: 10px;
 }

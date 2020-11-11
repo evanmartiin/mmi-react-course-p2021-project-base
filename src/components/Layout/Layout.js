@@ -11,7 +11,7 @@ const Layout = (props) => {
   return (
     <div className="layout">
       {removeReturn === false &&
-        <img className="return" src={Img1} alt="Retour"></img>
+        <a href="history.go(-1)"><img className="return" src={Img1} alt="Retour"></img></a>
       }
       {removeMenu === false &&
         <Menu />
