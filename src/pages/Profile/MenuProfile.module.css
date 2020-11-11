@@ -1,13 +1,49 @@
 .menuProfile {
-
+    
+    width: 75vw;
+    margin-left: 15vw;
+    margin-top: 7vh;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    position: absolute;
 }
+
+.titleProfile {
+
+    font: 6vw "Montserrat Bold";
+    margin-bottom: 0.25vh;
+    color:  #F1F6F9;
+}
+
+.titleProfile img {
+    height: 9vw;
+    margin-right: 3vw;
+}
+.menuProfileItemBox {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: 4vw "Lato";
+    margin-top: 2.5vh;
+    border: 1vw solid #F1F6F9;
+    border-radius: 3vw;
+    padding: 4vw;
+    width: 60vw;
+    height: 6vh;
+}
+
 .menuProfileItem {
     text-decoration: none;
     color: #F1F6F9;
-    padding: 50px;
-    font-size: 20px;
+    padding-top: 5vh;
 }
 
 .menuProfileItem img {
-    width: 60px;
+    width: 10vw;
+    margin-right: 3vw;
+}
+
+.menuProfileItem span {
+    text-align: center;
 }

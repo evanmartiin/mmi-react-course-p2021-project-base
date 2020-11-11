@@ -6,7 +6,13 @@ import Profile from 'pages/Profile'
 import Player from 'pages/Player'
 import Login from 'pages/Login'
 import Signup from 'pages/Signup'
-import Form from "pages/Form";
+import Form from 'pages/Form'
+import Hibernation from 'pages/Hibernation'
+import Alarm from 'pages/Alarm'
+import Download from 'pages/Download'
+import Playlist from 'pages/Playlist'
+import Timer from 'pages/Timer'
+
 
 function App() {
   return (
@@ -33,6 +39,27 @@ function App() {
         <Route path="/form">
           <Form />
         </Route>
+
+        <Route path="/hibernation">
+          <Hibernation />
+        </Route>
+
+        <Route path="/alarm">
+          <Alarm />
+        </Route>
+
+        <Route path="/download">
+          <Download />
+        </Route>
+
+        <Route path="/playlist">
+          <Playlist />
+        </Route>
+
+        <Route path="/timer">
+          <Timer />
+        </Route>
+
         <Route path="/">
           <Home />
         </Route>

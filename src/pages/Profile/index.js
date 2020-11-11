@@ -8,48 +8,55 @@ import Img3 from '../../assets/images/telechargements.png'
 import Img4 from '../../assets/images/minuteur-white.png'
 import Img5 from '../../assets/images/reveil-white.png'
 
+import Imgmoi from '../../assets/images/profile-white.png'
+
 import styles from './MenuProfile.module.css'
 
 const Profile = () => {
     return (
         <div>
-       <Layout>
-        <ul className={styles.menuProfile}>
-           <div>
-                <MenuLinkProfile to="home">
+       <Layout removeReturn>
+           <div className={styles.menuProfile}>
+                <div className={styles.titleProfile}>
+                    <img src={Imgmoi} alt="Moi"></img>
+                    <span>Moi</span>  
+                  </div> 
+
+           <div className={styles.menuProfileItemBox} >
+                <MenuLinkProfile to="hibernation">
                     <img src={Img1} alt="Mix Hibernation"></img> 
-                    Mix hibernation   
+                    <span>Mix hibernation</span>   
                 </MenuLinkProfile>
            </div>
 
-           <div>
-                <MenuLinkProfile to="home2">
+           <div className={styles.menuProfileItemBox}>
+                <MenuLinkProfile to="playlist">
                     <img src={Img2} alt="Tes playlists"></img> 
-                    Tes playlists
+                    <span>Tes playlists</span>
                 </MenuLinkProfile>
            </div>
 
-           <div>
-                <MenuLinkProfile to="home3">
+           <div className={styles.menuProfileItemBox}>
+                <MenuLinkProfile to="download">
                     <img src={Img3} alt="Téléchargements"></img> 
-                    Téléchargements
+                    <span>Téléchargements</span>
                 </MenuLinkProfile>
            </div>
 
-           <div>
-                <MenuLinkProfile to="home4">
+           <div className={styles.menuProfileItemBox}>
+                <MenuLinkProfile to="timer">
                     <img src={Img4} alt="Minuteur"></img> 
-                    Minuteur
+                    <span>Minuteur</span>
                 </MenuLinkProfile>
            </div>
 
-           <div>
-               <MenuLinkProfile to="home4">
-                    <img src={Img5} alt="Réveil"></img> 
-                    Réveil
+           <div className={styles.menuProfileItemBox}>
+               <MenuLinkProfile to="alarm">
+                    <img src={Img5} alt="Réveil"></img>
+                    <span>Réveil</span>
                 </MenuLinkProfile>
            </div>
-        </ul>
+        </div>
         </Layout>
         </div>
     );
