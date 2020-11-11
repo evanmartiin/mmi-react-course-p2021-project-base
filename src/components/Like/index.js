@@ -5,9 +5,7 @@ import unlikedIcon from '../../assets/images/like-empty.png'
 
 import './styles.css'
 
-const Like = (props) => {
-    const { liked } = props;
-
+const Like = () => {
     const [isLiked, updateisLiked] = useState(false)
 
     const toggleLiked = () => {
