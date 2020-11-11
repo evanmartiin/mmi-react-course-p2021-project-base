@@ -10,8 +10,8 @@ const Button = (props) => {
     <div>
       <Link to={linkTo}>
         <button className="largeButton">
-          {children}
-          <img src={Img} alt="Continuer"></img>
+          <span className="textButton">{children}</span>
+          <img src={Img} alt="Confirmer"></img>
         </button>
       </Link>
     </div>

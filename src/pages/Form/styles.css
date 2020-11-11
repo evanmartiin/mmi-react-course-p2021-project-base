@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 75vw;
     margin-left: 50vw;
     margin-top: 50vh;
@@ -14,6 +15,15 @@
     color: #F1F6F9;
     font: 2.2vh "Montserrat SemiBold";
     margin-bottom: 3vh;
-    justify-content: center;
-    text-align: center;
+}
+
+.formCircles {
+    width: 15vw;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
