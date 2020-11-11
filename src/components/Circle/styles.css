@@ -1,0 +1,15 @@
+.fullCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #F1F6F9;
+}
+
+.emptyCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #F1F6F9;
+}

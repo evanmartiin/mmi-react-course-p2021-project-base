@@ -24,3 +24,6 @@
     transition: 0.3s;
 }
 
+.isLikedFalse, .isLikedTrue {
+    outline: none;
+}

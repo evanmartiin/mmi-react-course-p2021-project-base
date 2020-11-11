@@ -3,12 +3,11 @@ import FormInput from './FormInput'
 import Layout from '../../components/Layout/Layout'
 import './styles.css'
 import Button from '../../components/Button'
-import { Link } from 'react-router-dom'
 
 const Form = () => {
     return (
         <Layout removeMenu>
-            <div  className="formInput">
+            <div className="formInput">
                 <h1>Qu'est-ce qui te ferait plaisir ?</h1>
                 <FormInput>
                     ASMR 
@@ -34,7 +33,7 @@ const Form = () => {
                 <FormInput>
                     Histoires pour enfants
                 </FormInput>
-                <Button><Link className="ButtonLink" to="/Home">Endors toi</Link></Button>
+                <Button linkTo="/Home">Endors-toi</Button>
             </div>
         </Layout>
     )
