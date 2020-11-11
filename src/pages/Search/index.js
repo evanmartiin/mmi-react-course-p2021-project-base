@@ -1,13 +1,17 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
-import ToggleButton from '../../components/ToggleButton'
+import RandomButton from '../../components/ToggleButton'
+import LoopButton from '../../components/ToggleButton/LoopButton'
+import TimerButton from '../../components/ToggleButton/TimerButton'
 
 const Search = () => {
     return (
         <div>
             <Layout>
                 Search
-                <ToggleButton/>
+                <RandomButton />
+                <LoopButton />
+                <TimerButton />
             </Layout>
         </div>
     );

@@ -1,35 +1,26 @@
 .isLikedTrue {
+    padding: 0px 0px 0px 5vh;
     background-color: #F1F6F9;
-    color: #14274E;
     border: none;
     width: 10vh;
     border-radius: 15vh;
     box-sizing: border-box;
-    padding: 0px 0px 0px 5vh;
     height: 5vh;
-    margin-top: 20vh;
     transition: 0.3s;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .isLikedFalse {
+    padding: 0px;
     background-color: #14274E;
-    color: #F1F6F9;
     border: 1px solid  #F1F6F9;
     width: 10vh;
     border-radius: 15vh;
     box-sizing: border-box;
-    margin-top: 20vh;
-    padding: 0px;
     height: 5vh;
     transition: 0.3s;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .isLikedFalse, .isLikedTrue {
