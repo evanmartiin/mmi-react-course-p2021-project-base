@@ -5,9 +5,10 @@
     width: 70vw;
     border-radius: 14px;
     padding: 0px;
-    height: 38px;
-    margin-top: 15px;
-    font: 20px "Lato";
+    height: 5vh;
+    margin-top: 2.5vh;
+    font: 2vh "Lato";
+    transition: 0.3s;
 }
 
 .isLikedFalse {
@@ -16,9 +17,13 @@
     border: 3px solid  #F1F6F9;
     width: 70vw;
     border-radius: 14px;
-    margin-top: 15px;
+    margin-top: 2.5vh;
     padding: 0px;
-    height: 38px;
-    font: 20px "Lato";
+    height: 5vh;
+    font: 2vh "Lato";
+    transition: 0.3s;
 }
 
+.isLikedFalse, .isLikedTrue {
+    outline: none;
+}

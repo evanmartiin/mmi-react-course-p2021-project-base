@@ -5,14 +5,14 @@
     justify-content: center;
     width: 75vw;
     margin-left: 50vw;
-    margin-top: 45vh;
+    margin-top: 56vh;
     transform: translate(-50%, -50%);
     position: absolute;
 }
 
 .formInput h1 {
     color: #F1F6F9;
-    font: 20px "Montserrat SemiBold";
-    margin-bottom: 20px;
+    font: 2.2vh "Montserrat SemiBold";
+    margin-bottom: 3vh;
     justify-content: center
 }

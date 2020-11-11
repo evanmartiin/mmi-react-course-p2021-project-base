@@ -7,7 +7,7 @@ import Button from '../../components/Button'
 const Form = () => {
     return (
         <Layout removeMenu>
-            <div  className="formInput">
+            <div className="formInput">
                 <h1>Qu'est-ce qui te ferait plaisir ?</h1>
                 <FormInput>
                     ASMR 
