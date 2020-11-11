@@ -3,6 +3,7 @@ import FormInput from './FormInput'
 import Layout from '../../components/Layout/Layout'
 import styles from './styles.css'
 import Button from '../../components/Button'
+import { Link } from 'react-router-dom'
 
 const Form = () => {
     return (
@@ -33,7 +34,7 @@ const Form = () => {
                 <FormInput>
                     Histoires pour enfants
                 </FormInput>
-                <Button>Endors toi</Button>
+                <Button><Link to="/Home">Endors toi</Link></Button>
             </div>
         </Layout>
     )
