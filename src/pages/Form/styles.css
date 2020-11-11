@@ -5,7 +5,7 @@
     justify-content: center;
     width: 75vw;
     margin-left: 50vw;
-    margin-top: 56vh;
+    margin-top: 50vh;
     transform: translate(-50%, -50%);
     position: absolute;
 }
@@ -14,5 +14,6 @@
     color: #F1F6F9;
     font: 2.2vh "Montserrat SemiBold";
     margin-bottom: 3vh;
-    justify-content: center
+    justify-content: center;
+    text-align: center;
 }
