@@ -7,6 +7,7 @@ import Player from 'pages/Player'
 import Login from 'pages/Login'
 import Signup from 'pages/Signup'
 import Form from "pages/Form";
+import Entrance from "pages/Entrance";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route path="/form">
           <Form />
+        </Route>
+        <Route path="/Entrance">
+          <Entrance />
         </Route>
         <Route path="/">
           <Home />
