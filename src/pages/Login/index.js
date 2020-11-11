@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import Input from '../../components/Input/index'
 import Button from '../../components/Button'
@@ -19,6 +20,7 @@ const Login = () => {
                     </div>
                     <Button linkTo="/Home">Connecte-toi</Button>
                 </div>
+                <Link to="/Signup"><p className="textCircles">Pas de compte ?</p></Link>
             </Layout>
         </div>
     );
