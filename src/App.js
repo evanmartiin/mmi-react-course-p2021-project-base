@@ -6,7 +6,7 @@ import Profile from 'pages/Profile'
 import Player from 'pages/Player'
 import Login from 'pages/Login'
 import Signup from 'pages/Signup'
-import Form from "./pages/Form";
+import Form from "pages/Form";
 
 function App() {
   return (
