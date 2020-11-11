@@ -12,7 +12,6 @@ const FormInput = (props) => {
     return (
         <div>
             <button type="button" className={isLiked ? styles.isLikedTrue : styles.isLikedFalse} onClick={toggleLike}>
-            <p>{isLiked ? 'true' : 'false'}</p>
                 {children}
             </button>
         </div>

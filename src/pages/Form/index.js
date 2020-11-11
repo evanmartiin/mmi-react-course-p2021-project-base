@@ -1,20 +1,36 @@
 import React from 'react'
 import FormInput from './FormInput'
 import Layout from '../../components/Layout/Layout'
+import styles from './styles.css'
 
 const Form = () => {
     return (
         <Layout removeMenu>
-            <div>
-                <h1> qu'est-ce qui te ferait plaisir ?</h1>
+            <div  className="formInput">
+                <h1>Qu'est-ce qui te ferait plaisir ?</h1>
                 <FormInput>
-                    BLABLA 1
+                    ASMR 
                 </FormInput>
                 <FormInput>
-                    BLABLA 2
+                    Méditation Hypnose
                 </FormInput>
                 <FormInput>
-                    BLABLA 3
+                    Exercices de respiration
+                </FormInput>
+                <FormInput>
+                    Ambiances naturelles
+                </FormInput>
+                <FormInput>
+                    Musiques relaxantes
+                </FormInput>
+                <FormInput>
+                    Musiques classiques
+                </FormInput>
+                <FormInput>
+                    Histoires/Podcasts
+                </FormInput>
+                <FormInput>
+                    Histoires pour enfants
                 </FormInput>
             </div>
         </Layout>
