@@ -57,3 +57,22 @@
 .passDiv img {
     width: 9vw;
 }
+
+.inputName {
+    background-color: transparent;
+    color: #F1F6F9;
+    text-align: center;
+    border: 3px solid #F1F6F9;
+    border-radius: 14px;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 40px;
+    font: 20px "Lato";
+    margin-top: 20px;
+}
+.inputName:focus {
+    outline: none;
+}
+.inputName::placeholder {
+    color: #9BA4B4;
+}
