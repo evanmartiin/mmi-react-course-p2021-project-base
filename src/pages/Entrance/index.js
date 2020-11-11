@@ -11,7 +11,7 @@ const Entrance = () => {
                 <div className="Entrance">
                     <img className="Logo" src={Logo} alt="Recherche"></img>
                     <div className="EntranceButton">
-                        <Button linkTo="/Home">Inscris-toi</Button>
+                        <Button linkTo="/Signup">Inscris-toi</Button>
                         <Button linkTo="/Login">Connecte-toi</Button>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import Circle from '../../components/Circle'
 
 const Form = () => {
     return (
-        <Layout removeMenu>
+        <Layout removeMenu backTo="/signup">
             <div className="formInput">
                 <h1>Qu'est-ce qui te ferait plaisir ?</h1>
                 <FormInput>

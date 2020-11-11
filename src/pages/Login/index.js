@@ -9,7 +9,7 @@ import './styles.css'
 const Login = () => {
     return (
         <div>
-            <Layout removeMenu>
+            <Layout removeMenu backTo="/entrance">
                 <div className="loginForm">
                     <div className="marginInput">
                         <Input type="email" placeholder="Mail" label="Adresse mail :"/>

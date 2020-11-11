@@ -40,31 +40,24 @@ function App() {
         <Route path="/form">
           <Form />
         </Route>
-
         <Route path="/hibernation">
           <Hibernation />
         </Route>
-
         <Route path="/alarm">
           <Alarm />
         </Route>
-
         <Route path="/download">
           <Download />
         </Route>
-
         <Route path="/playlist">
           <Playlist />
         </Route>
-
         <Route path="/timer">
           <Timer />
         </Route>
-
-        <Route path="/Entrance">
+        <Route path="/entrance">
           <Entrance />
         </Route>
-
         <Route path="/">
           <Home />
         </Route>

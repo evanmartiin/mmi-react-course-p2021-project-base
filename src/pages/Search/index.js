@@ -7,7 +7,7 @@ import TimerButton from '../../components/ToggleButton/TimerButton'
 const Search = () => {
     return (
         <div>
-            <Layout>
+            <Layout removeReturn>
                 Search
                 <RandomButton />
                 <LoopButton />

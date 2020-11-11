@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/Layout'
 const Player = () => {
     return (
         <div>
-            <Layout>
+            <Layout removeReturn>
                 Player
             </Layout>
         </div>

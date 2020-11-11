@@ -10,7 +10,7 @@ import './styles.css'
 const Signup = () => {
     return (
         <div>
-            <Layout removeMenu>
+            <Layout removeMenu backTo="/entrance">
                 <div className="signupForm">
                     <div className="nameInput">
                         <h1>Bonsoir</h1>

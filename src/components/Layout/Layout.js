@@ -1,17 +1,18 @@
 import React from 'react'
 import Menu from '../Menu'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 import Img1 from '../../assets/images/return-white.png'
 
 import './styles.css'
 
 const Layout = (props) => {
-  const { children, removeMenu, removeReturn } = props;
+  const { children, removeMenu, removeReturn, backTo } = props;
   return (
     <div className="layout">
       {removeReturn === false &&
-        <a href="history.go(-1)"><img className="return" src={Img1} alt="Retour"></img></a>
+        <Link to={backTo}><img className="return" src={Img1} alt="Retour"></img></Link>
       }
       {removeMenu === false &&
         <Menu />
@@ -28,7 +29,8 @@ Layout.defaultProps = {
 
 Layout.propTypes = {
   removeMenu: PropTypes.bool.isRequired,
-  removeReturn: PropTypes.bool.isRequired
+  removeReturn: PropTypes.bool.isRequired,
+  backTo: PropTypes.string
 }
 
 export default Layout
