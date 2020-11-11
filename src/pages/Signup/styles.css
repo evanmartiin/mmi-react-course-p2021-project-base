@@ -1,4 +1,4 @@
-.loginForm {
+.signupForm {
     font: 20px "Montserrat SemiBold";
     color: #F1F6F9;
     display: flex;
@@ -10,6 +10,24 @@
     margin-top: 50vh;
     transform: translate(-50%, -50%);
     position: absolute;
+}
+
+.nameInput {
+    width: 68vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.nameInput h1 {
+    font: 4vh "Montserrat Bold";
+    margin: 0;
+    margin-bottom: -10px;
 }
 
 .marginInput {
@@ -31,4 +49,15 @@
     left: 50vw;
     bottom: 30px;
     transform: translateX(-50%);
+}
+
+.formCircles {
+    width: 15vw;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }

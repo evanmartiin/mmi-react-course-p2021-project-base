@@ -12,6 +12,7 @@ import Alarm from 'pages/Alarm'
 import Download from 'pages/Download'
 import Playlist from 'pages/Playlist'
 import Timer from 'pages/Timer'
+import Entrance from "pages/Entrance";
 
 
 function App() {
@@ -58,6 +59,10 @@ function App() {
 
         <Route path="/timer">
           <Timer />
+        </Route>
+
+        <Route path="/Entrance">
+          <Entrance />
         </Route>
 
         <Route path="/">

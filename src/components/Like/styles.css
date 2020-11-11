@@ -1,0 +1,12 @@
+.like {
+    background-color: transparent;
+    border: none;
+}
+
+.like:focus {
+    outline: none;
+}
+
+.like img {
+    height: 4vh;
+}

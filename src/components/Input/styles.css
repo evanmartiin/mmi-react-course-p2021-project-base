@@ -16,3 +16,63 @@
 .input::placeholder {
     color: #9BA4B4;
 }
+
+.passDiv {
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.inputPass {
+    background-color: transparent;
+    color: #F1F6F9;
+    text-align: center;
+    border: 3px solid #F1F6F9;
+    border-radius: 14px;
+    box-sizing: border-box;
+    width: 60vw;
+    height: 40px;
+    font: 20px "Lato";
+}
+
+.inputPass:focus {
+    outline: none;
+}
+
+.inputPass::placeholder {
+    color: #9BA4B4;
+}
+
+.buttonPass {
+    background-color: transparent;
+    border: none;
+}
+
+.buttonPass:focus {
+    outline: none;
+}
+
+.passDiv img {
+    width: 9vw;
+}
+
+.inputName {
+    background-color: transparent;
+    color: #F1F6F9;
+    text-align: center;
+    border: 3px solid #F1F6F9;
+    border-radius: 14px;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 40px;
+    font: 20px "Lato";
+    margin-top: 20px;
+}
+.inputName:focus {
+    outline: none;
+}
+.inputName::placeholder {
+    color: #9BA4B4;
+}

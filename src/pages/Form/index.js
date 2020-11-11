@@ -3,6 +3,7 @@ import FormInput from './FormInput'
 import Layout from '../../components/Layout/Layout'
 import './styles.css'
 import Button from '../../components/Button'
+import Circle from '../../components/Circle'
 
 const Form = () => {
     return (
@@ -34,6 +35,10 @@ const Form = () => {
                     Histoires pour enfants
                 </FormInput>
                 <Button linkTo="/Home">Endors-toi</Button>
+            </div>
+            <div className="formCircles">
+                <Circle />
+                <Circle isFull />
             </div>
         </Layout>
     )

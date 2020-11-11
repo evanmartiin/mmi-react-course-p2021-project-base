@@ -1,14 +1,20 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
-import { Link } from 'react-router-dom'
+import Button from '../../components/Button'
+import Logo from '../../assets/images/logo.png'
+import './index.css'
 
 const Entrance = () => {
     return (
         <div>
-            <Layout removeReturn>
-                Home
-                <br/><Link to="/login">Login</Link>
-                <br/><Link to="/form">Form</Link>
+            <Layout removeMenu removeReturn>
+                <div className="Entrance">
+                    <img className="Logo" src={Logo} alt="Recherche"></img>
+                    <div className="EntranceButton">
+                        <Button linkTo="/Home">Inscris-toi</Button>
+                        <Button linkTo="/Login">Connecte-toi</Button>
+                    </div>
+                </div>
             </Layout>
         </div>
     );
