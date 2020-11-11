@@ -1,7 +1,7 @@
 import React from 'react'
 import FormInput from './FormInput'
 import Layout from '../../components/Layout/Layout'
-import styles from './styles.css'
+import './styles.css'
 import Button from '../../components/Button'
 import { Link } from 'react-router-dom'
 
@@ -34,7 +34,7 @@ const Form = () => {
                 <FormInput>
                     Histoires pour enfants
                 </FormInput>
-                <Button><Link to="/Home">Endors toi</Link></Button>
+                <Button><Link className="ButtonLink" to="/Home">Endors toi</Link></Button>
             </div>
         </Layout>
     )
