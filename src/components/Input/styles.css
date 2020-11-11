@@ -4,17 +4,15 @@
     text-align: center;
     border: 3px solid #F1F6F9;
     border-radius: 14px;
+    box-sizing: border-box;
     width: 75vw;
     height: 40px;
-    font-family: "Lato";
-    font-size: 20px;
-    margin: 20px 0;
+    font: 20px "Lato";
+    margin-top: 20px;
 }
-
 .input:focus {
     outline: none;
 }
-
-.label {
-    margin-bottom: 50px;
+.input::placeholder {
+    color: #9BA4B4;
 }

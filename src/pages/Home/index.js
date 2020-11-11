@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <div>
-            <Layout>
+            <Layout removeReturn>
                 Home
                 <br/><Link to="/login">Login</Link>
                 <br/><Link to="/form">Form</Link>
