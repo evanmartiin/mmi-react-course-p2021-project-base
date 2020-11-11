@@ -10,8 +10,10 @@ const Entrance = () => {
             <Layout removeMenu removeReturn>
                 <div className="Entrance">
                     <img className="Logo" src={Logo} alt="Recherche"></img>
-                    <Button linkTo="/Home">Inscris-toi</Button>
-                    <Button linkTo="/Login">Connecte-toi</Button>
+                    <div className="EntranceButton">
+                        <Button linkTo="/Home">Inscris-toi</Button>
+                        <Button linkTo="/Login">Connecte-toi</Button>
+                    </div>
                 </div>
             </Layout>
         </div>
