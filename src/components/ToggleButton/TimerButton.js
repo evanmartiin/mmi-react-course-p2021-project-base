@@ -14,11 +14,12 @@ const TimerButton = (props) => {
     }
 
     return (
-        <div className="ToggleButton">
+        <div className={styles.buttonDiv}>
             <button type="button" className={timerIsClicked ? styles.isLikedTrue : styles.isLikedFalse} onClick={toggleTimerClick}>
                 {children}
                 <img src={timerIsClicked ? Timerblue : Timerwhite} alt="Aimer"/>
             </button>
+            <p>Minuteur</p>
         </div>
     )
 }

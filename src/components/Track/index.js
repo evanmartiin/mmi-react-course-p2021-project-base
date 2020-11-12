@@ -7,7 +7,7 @@ import listening from '../../assets/images/music-note.png'
 import './styles.css'
 
 const Track = (props) => {
-    const { artist, title, theme, isListening } = props;
+    const { artist, title, theme, isListening, liked } = props;
     return (
         <div className="track">
             <div className="trackCover">
@@ -22,7 +22,7 @@ const Track = (props) => {
                 <p className="theme">{theme}</p>
             </div>
             <div className="trackSettings">
-                <Like />
+                <Like liked={liked}/>
                 <TrackSettings />
             </div>
         </div>
@@ -30,11 +30,13 @@ const Track = (props) => {
 }
 
 Track.defaultProps = {
-    isListening: false
+    isListening: false,
+    liked: false
 }
 
 Track.propTypes = {
-    isListening: PropTypes.bool.isRequired
+    isListening: PropTypes.bool.isRequired,
+    liked: PropTypes.bool
 }
 
 export default Track

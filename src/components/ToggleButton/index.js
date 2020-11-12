@@ -14,11 +14,12 @@ const RandomButton = (props) => {
     }
 
     return (
-        <div>
+        <div className={styles.buttonDiv}>
             <button type="button" className={randomIsClicked ? styles.isLikedTrue : styles.isLikedFalse} onClick={toggleRandomClick}>
                 {children}
                 <img src={randomIsClicked ? Randomblue : Randomwhite} alt="Aimer"/>
             </button>
+            <p>Aléatoire</p>
         </div>
     )
 }

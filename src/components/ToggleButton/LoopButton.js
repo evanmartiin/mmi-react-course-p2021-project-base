@@ -13,11 +13,12 @@ const LoopButton = (props) => {
     }
 
     return (
-        <div className="ToggleButton">
+        <div className={styles.buttonDiv}>
             <button type="button" className={loopIsClicked ? styles.isLikedTrue : styles.isLikedFalse} onClick={toggleLoopmClick}>
                 {children}
                 <img src={loopIsClicked ?  Loopblue : Loopwhite} alt="Aimer"/>
             </button>
+            <p>En boucle</p>
         </div>
     )
 }

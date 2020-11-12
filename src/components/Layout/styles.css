@@ -9,11 +9,17 @@
   background-size: cover;
   background-position: 50% 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .return {
   width: 20px;
   padding: 30px;
   position: absolute;
+}
+
+.menuVoid {
+  width: 100vw;
+  height: 15vh;
 }
