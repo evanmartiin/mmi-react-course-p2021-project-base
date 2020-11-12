@@ -1,32 +1,34 @@
 import React from 'react'
-import Menu from '../Menu'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 import Img1 from '../../assets/images/return-white.png'
-import LittlePlayer from '../LittlePlayer/index.js'
 
 import './styles.css'
+import Menu from '../Menu'
+import LittlePlayer from '../LittlePlayer'
 
 const Layout = (props) => {
   const { children, removeMenu, removeReturn, backTo, currentListening } = props;
   return (
-    <div className="layout">
-      <div className="layoutBackground">
-        {!removeReturn &&
-          <Link to={backTo}><img className="return" src={Img1} alt="Retour"></img></Link>
-        }
-        {!removeMenu &&
-          <Menu />
-        }
-        {children}
-        {!removeMenu &&
-          <div className="menuVoid" />
-        }
-        {currentListening && 
-          <LittlePlayer />
-        }
-      </div>
+    <div>
+      <div className="layout" />
+      {!removeReturn &&
+        <Link to={backTo}><img className="return" src={Img1} alt="Retour"></img></Link>
+      }
+      {children}
+      {!removeMenu &&
+        <Menu />
+      }
+      {currentListening &&
+        <LittlePlayer />
+      }
+      {!removeMenu && !currentListening &&
+        <div className="menuVoid1" />
+      }
+      {!removeMenu && currentListening &&
+        <div className="menuVoid2" />
+      }
     </div>
   )
 }

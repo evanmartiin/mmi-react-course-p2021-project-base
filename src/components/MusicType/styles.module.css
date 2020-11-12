@@ -1,17 +1,16 @@
-.musicType {
-    width: 25vw;
-    height: 20vw;
+.musicTypeASMR img {
+    width: 40vw;
+    height: 12vh;
     border-radius: 10px;
-    background-image: url("https://static2.greatsong.net/artiste/276x276/foushee-99991200008421.jpg");
-    background-size: cover;
-    display: flex;
+    margin-left: 6.5vw;
 }
 
-.titleMusicType {
-    color: #F1F6F9;
+.musicTypeASMR h1 {
+    color: #f1f6f9;
     text-decoration: none;
     font: 3vh "Lato";
     text-align: center;
-    padding-top: 6.5vw;
-    margin: 0px;
+    margin: 0;
+    margin-top: -8.5vh;
+    margin-left: 6.5vw;
 }
