@@ -4,14 +4,14 @@
 
 .layout {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .layoutBackground {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('../../assets/images/background-image.png');
   background-size: cover;
   background-position: 50% 100%;
