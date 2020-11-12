@@ -15,6 +15,7 @@ import Playlist from 'pages/Playlist'
 import Timer from 'pages/Timer'
 import Entrance from 'pages/Entrance'
 import Artist from 'pages/Artist'
+import Settings from 'pages/Settings'
 
 // const spotifyClientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID
 // const spotifyRedirectUri = process.env.REACT_APP_SPOTIFY_REDIRECT_URI
@@ -66,6 +67,9 @@ function App() {
           <Route path="/artist">
             <Artist />
           </Route>
+        <Route path="/settings">
+          <Settings />
+        </Route>
           <Route path="/">
             <Home />
           </Route>

@@ -7,15 +7,23 @@ import Img2 from '../../assets/images/tesplaylists-white.png'
 import Img3 from '../../assets/images/telechargements.png'
 import Img4 from '../../assets/images/minuteur-white.png'
 import Img5 from '../../assets/images/reveil-white.png'
+import Img6 from '../../assets/images/settings-white.png'
 
 import Imgmoi from '../../assets/images/profile-white.png'
 
 import styles from './MenuProfile.module.css'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
     return (
         <div>
             <Layout removeReturn>
+                <div className={styles.settings}>
+                <Link to="/settings">
+                    <img src={Img6} alt="Paramètres"></img>
+                </Link>
+                </div>
+
                 <div className={styles.menuProfile}>
                     <div className={styles.titleProfile}>
                         <img src={Imgmoi} alt="Moi"></img>

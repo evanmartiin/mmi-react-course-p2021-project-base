@@ -4,19 +4,13 @@
 
 .layout {
   width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.layoutBackground {
-  width: 100vw;
-  min-height: 100vh;
+  height: 100%;
   background-image: url('../../assets/images/background-image.png');
   background-size: cover;
   background-position: 50% 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .return {
@@ -25,7 +19,12 @@
   position: static;
 }
 
-.menuVoid {
+.menuVoid1 {
   width: 100vw;
   height: 15vh;
+}
+
+.menuVoid2 {
+  width: 100vw;
+  height: 25vh;
 }
