@@ -12,19 +12,21 @@ const Layout = (props) => {
   const { children, removeMenu, removeReturn, backTo, currentListening } = props;
   return (
     <div className="layout">
-      {!removeReturn &&
-        <Link to={backTo}><img className="return" src={Img1} alt="Retour"></img></Link>
-      }
-      {!removeMenu &&
-        <Menu />
-      }
-      {children}
-      {!removeMenu &&
-        <div className="menuVoid" />
-      }
-      {currentListening && 
-        <LittlePlayer />
-      }
+      <div className="layoutBackground">
+        {!removeReturn &&
+          <Link to={backTo}><img className="return" src={Img1} alt="Retour"></img></Link>
+        }
+        {!removeMenu &&
+          <Menu />
+        }
+        {children}
+        {!removeMenu &&
+          <div className="menuVoid" />
+        }
+        {currentListening && 
+          <LittlePlayer />
+        }
+      </div>
     </div>
   )
 }

@@ -16,6 +16,9 @@ import Entrance from 'pages/Entrance'
 import Artist from 'pages/Artist'
 import Settings from 'pages/Settings'
 
+// const spotifyClientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID
+// const spotifyClientSecret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET
+// const spotifyRedirectUri = process.env.REACT_APP_SPOTIFY_REDIRECT_URI
 
 function App() {
   return (
