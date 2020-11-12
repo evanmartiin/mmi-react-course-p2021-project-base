@@ -10,11 +10,40 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease;
+}
+
+.bigPlayer {
+    background-color: rgba(20, 39, 78, 0.9);
+    width: 100vw;
+    height: calc(100vh - (6vh + 2em));
+    z-index: 100;
+    position: fixed;
+    z-index: 100;
+    bottom: calc(6vh + 2em);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.toggleOpenedButton {
+    border: none;
+    background-color: transparent;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toggleOpenedButton:focus {
+    outline: none;
 }
 
 .playerCover {
-    width: 15vw;
-    height: 15vw;
+    width: 15vw !important;
+    height: 15vw !important;
     border-radius: 15px;
     overflow: hidden;
     opacity: 0.75;
@@ -28,10 +57,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-}
-
-.playerInfos p {
-    text-decoration: underline rgba(20, 39, 78, 0.9);
+    text-align: left;
 }
 
 .playerSettings {
