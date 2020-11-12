@@ -14,6 +14,7 @@ import Playlist from 'pages/Playlist'
 import Timer from 'pages/Timer'
 import Entrance from 'pages/Entrance'
 import Artist from 'pages/Artist'
+import Settings from 'pages/Settings'
 
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
         </Route>
         <Route path="/artist">
           <Artist />
+        </Route>
+        <Route path="/settings">
+          <Settings />
         </Route>
         <Route path="/">
           <Home />
