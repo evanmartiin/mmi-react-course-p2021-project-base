@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
+import Menu from '../../components/Menu/index'
 import MenuLinkProfile from './MenuLinkProfile'
 
 import Img1 from '../../assets/images/mixhibernation-white.png'
@@ -17,7 +18,8 @@ import { Link } from 'react-router-dom'
 const Profile = () => {
     return (
         <div>
-            <Layout removeReturn>
+            <Layout removeReturn />
+            <Menu />
                 <div className={styles.settings}>
                 <Link to="/settings">
                     <img src={Img6} alt="Paramètres"></img>
@@ -65,7 +67,6 @@ const Profile = () => {
                         </MenuLinkProfile>
                     </div>
                 </div>
-            </Layout>
         </div>
     );
 }
