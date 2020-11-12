@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom'
 
 const Profile = () => {
     return (
-        <div>
+        <div className={styles.profile}>
             <Layout removeReturn>
                 <div className={styles.settings}>
                 <Link to="/settings">
@@ -30,40 +30,35 @@ const Profile = () => {
                         <span>Moi</span>
                     </div>
 
-                    <div className={styles.menuProfileItemBox} >
+                    
                         <MenuLinkProfile to="hibernation">
                             <img src={Img1} alt="Mix Hibernation"></img>
                             <span>Mix hibernation</span>
                         </MenuLinkProfile>
-                    </div>
-
-                    <div className={styles.menuProfileItemBox}>
+                
+                    
                         <MenuLinkProfile to="playlist">
                             <img src={Img2} alt="Tes playlists"></img>
                             <span>Tes playlists</span>
                         </MenuLinkProfile>
-                    </div>
 
-                    <div className={styles.menuProfileItemBox}>
+                    
                         <MenuLinkProfile to="download">
                             <img src={Img3} alt="Téléchargements"></img>
                             <span>Téléchargements</span>
                         </MenuLinkProfile>
-                    </div>
 
-                    <div className={styles.menuProfileItemBox}>
+                    
                         <MenuLinkProfile to="timer">
                             <img src={Img4} alt="Minuteur"></img>
                             <span>Minuteur</span>
                         </MenuLinkProfile>
-                    </div>
 
-                    <div className={styles.menuProfileItemBox}>
+                    
                         <MenuLinkProfile to="alarm">
                             <img src={Img5} alt="Réveil"></img>
                             <span>Réveil</span>
                         </MenuLinkProfile>
-                    </div>
                 </div>
             </Layout>
         </div>
