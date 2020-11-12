@@ -3,8 +3,8 @@
     width: 75vw;
     margin-left: 15vw;
     margin-top: 9vh;
+    margin-bottom: 15vh;
     overflow-y: scroll;
-    overflow-y: hidden;
     position: absolute;
 }
 
