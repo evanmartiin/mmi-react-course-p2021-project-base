@@ -1,0 +1,13 @@
+.preferences {
+display: flex;
+   flex-wrap: wrap;
+}
+
+.preferencesTop {
+    display: flex;
+}
+
+.preferencesBottom {
+    display: flex;
+    margin-top: 8vh;
+}
