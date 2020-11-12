@@ -1,0 +1,24 @@
+.headerArtist {
+    width: 100vw;
+    height: 40vh;
+    background-color: #394867;
+    margin-top: -20vh;
+    margin-bottom: 20px;
+    pointer-events: none;
+}
+
+.headerArtist img {
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 50vw;
+    margin-top: 12vh;
+    transform: translateX(-50%);
+}
+
+.headerArtist figcaption {
+    font: 3vh 'Montserrat Bold';
+    color: #F1F6F9;
+    text-align: center;
+}

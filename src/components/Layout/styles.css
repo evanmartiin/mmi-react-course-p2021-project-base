@@ -16,7 +16,7 @@
 .return {
   width: 20px;
   padding: 30px;
-  position: absolute;
+  position: static;
 }
 
 .menuVoid {

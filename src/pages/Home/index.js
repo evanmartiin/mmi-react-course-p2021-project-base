@@ -8,9 +8,10 @@ const Home = () => {
             <Layout removeReturn>
                 Home
                 <br/><Link to="/login">Login</Link>
-                <br/><Link to="/Signup">Signup</Link>
+                <br/><Link to="/signup">Signup</Link>
                 <br/><Link to="/form">Form</Link>
-                <br/><Link to="/Entrance">Entrance</Link>
+                <br/><Link to="/entrance">Entrance</Link>
+                <br/><Link to="/artist">Artist</Link>
             </Layout>
         </div>
     );

@@ -12,7 +12,8 @@ import Alarm from 'pages/Alarm'
 import Download from 'pages/Download'
 import Playlist from 'pages/Playlist'
 import Timer from 'pages/Timer'
-import Entrance from "pages/Entrance";
+import Entrance from 'pages/Entrance'
+import Artist from 'pages/Artist'
 
 
 function App() {
@@ -57,6 +58,9 @@ function App() {
         </Route>
         <Route path="/entrance">
           <Entrance />
+        </Route>
+        <Route path="/artist">
+          <Artist />
         </Route>
         <Route path="/">
           <Home />
