@@ -3,7 +3,8 @@
     width: 100vw;
     height: calc(6vh + 2em);
     z-index: 100;
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     bottom: calc(6vh + 2em);
     display: flex;
     flex-direction: row;
