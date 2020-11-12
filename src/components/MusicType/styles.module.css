@@ -1,0 +1,17 @@
+.musicType {
+    width: 25vw;
+    height: 20vw;
+    border-radius: 10px;
+    background-image: url("https://static2.greatsong.net/artiste/276x276/foushee-99991200008421.jpg");
+    background-size: cover;
+    display: flex;
+}
+
+.titleMusicType {
+    color: #F1F6F9;
+    text-decoration: none;
+    font: 3vh "Lato";
+    text-align: center;
+    padding-top: 6.5vw;
+    margin: 0px;
+}
