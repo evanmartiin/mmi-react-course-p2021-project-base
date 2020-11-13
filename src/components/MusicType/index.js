@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 const MusicType = (props) => {
   const { linkTo, imageType, title } = props;
   return (
-    <Link to={linkTo}>
+    <Link to={linkTo} style={{ textDecoration: 'none' }}>
       <div className={styles.musicTypeASMR}>
         <img src={imageType} alt="Preferences"/>
         <h1>{title}</h1> 

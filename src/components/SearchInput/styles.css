@@ -1,0 +1,32 @@
+.searchInput {
+    background-color: transparent;
+    border: 3px solid #F1F6F9;
+    border-radius: 150vh;
+    width: 86vw;
+    height: 7vh;
+    margin-top: 15vw;
+    margin-left: 6.5vw;
+    display: flex;
+}
+
+.searchInputWhereWeClick {
+    font: 15px "Lato";
+    background-color: transparent;
+    color: #F1F6F9;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 2vh;
+    height: 7vh;
+}
+
+.searchInputWhereWeClick::placeholder{
+    color: #F1F6F9;
+}
+
+.searchInput img {
+    width: 4.5vh;
+    height: 4.5vh;
+    margin-top: 1.2vh;
+    margin-left: 3vw;
+    color:  #F1F6F9;
+}

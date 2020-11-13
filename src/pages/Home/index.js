@@ -7,6 +7,7 @@ import ASMRType from '../../assets/images/ASMR.png'
 import respiration from '../../assets/images/respiration.png'
 import meditation from '../../assets/images/meditation.png'
 import ambiance from '../../assets/images/ambiance.png'
+import Line from '../../components/Line'
 
 
 const Home = () => {
@@ -16,13 +17,14 @@ const Home = () => {
                 <div className="preferences">
                     <div className="preferencesTop">
                         <MusicType linkTo="/form"  imageType={ASMRType} title="ASMR"/>
-                        <MusicType linkTo="/form"  imageType={meditation} title="Méditation Hypnose"/>
+                        <MusicType linkTo="/form"  imageType={meditation} title="Podcast"/>
                     </div>
                     <div className="preferencesBottom">
-                        <MusicType linkTo="/form"  imageType={respiration} title="Exercices de respiration"/>
-                        <MusicType linkTo="/form"  imageType={ambiance} title="Ambiance naturelle"/>
+                        <MusicType linkTo="/form"  imageType={respiration} title="Podcast"/>
+                        <MusicType linkTo="/form"  imageType={ambiance} title="ASMR"/>
                     </div>
                 </div>
+                <Line />
                 <br/><Link to="/login">Login</Link>
                 <br/><Link to="/signup">Signup</Link>
                 <br/><Link to="/form">Form</Link>
