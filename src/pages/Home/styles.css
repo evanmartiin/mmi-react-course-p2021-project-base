@@ -1,0 +1,24 @@
+.preferences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preferencesNone {
+    display: none;
+}
+
+.preferencesTop {
+    display: flex;
+    overflow: unset;
+}
+
+.preferencesBottom {
+    display: flex;
+    margin-top: 8vh;
+}
+
+.preferencesTop2 {
+    display: flex;
+    margin-top: 8vh;
+}
+

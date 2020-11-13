@@ -1,0 +1,43 @@
+.isLikedTrue {
+    background-color: #F1F6F9;
+    color: #14274E;
+    border: none;
+    width: 75vw;
+    border-radius: 14px;
+    box-sizing: border-box;
+    padding: 0px 10px 0px 30px;
+    height: 5vh;
+    margin-top: 2.5vh;
+    font: 2vh "Lato";
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isLikedFalse {
+    background-color: #14274E;
+    color: #F1F6F9;
+    border: 3px solid  #F1F6F9;
+    width: 75vw;
+    border-radius: 14px;
+    box-sizing: border-box;
+    margin-top: 2.5vh;
+    padding: 0px 10px;
+    height: 5vh;
+    font: 2vh "Lato";
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isLikedFalse, .isLikedTrue {
+    outline: none;
+}
+
+.isLikedFalse img, .isLikedTrue img {
+    height: 2.5vh;
+}

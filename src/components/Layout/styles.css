@@ -2,11 +2,33 @@
   --page-title-color: green;
 }
 
-.Background {
-  height: 94vh;
+.layout {
   width: 100vw;
-  position: absolute;
+  height: 100vh;
+  background-image: url('../../assets/images/background-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: -10;
 }
 
+.return {
+  width: 20px;
+  padding: 30px;
+  position: static;
+}
+
+.menuVoid1 {
+  width: 100vw;
+  height: 15vh;
+}
+
+.menuVoid2 {
+  width: 100vw;
+  height: 25vh;
+}

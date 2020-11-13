@@ -1,0 +1,51 @@
+.preferences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preferencesNone {
+    display: none;
+}
+
+.preferencesTop {
+    display: flex;
+    overflow: unset;
+}
+
+.preferencesBottom {
+    display: flex;
+    margin-top: 8vh;
+}
+
+.preferencesTop2 {
+    display: flex;
+    margin-top: 8vh;
+}
+
+.searchPlaylistNone {
+    display: none;
+}
+
+.searchPlaylist {
+    display: block;
+    animation-duration: 3s;
+    animation-name: blowUp;
+}
+
+
+
+@keyframes blowUp {
+    from {
+        position: absolute;
+        bottom: 20vh;
+        height: 0vw;
+        left: 12vw;
+    }
+
+    to {
+        positon:absolute;
+        height: 120vh;
+        left: 12vw;
+        bottom: 20vh;
+    }
+  }

@@ -1,0 +1,50 @@
+.Logo {
+    width: 70vw;
+    display: inline-block;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    animation-duration: 4s;
+    animation-name: fadeIn;
+}
+
+.Entrance {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EntranceButton {
+    animation-duration: 5s;
+    animation-name: button;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        margin-top: 37vh;
+    }
+    75% {
+        opacity: 1;
+        margin-top: 37vh;
+    }
+    to {
+        positon:absolute;
+        margin-top: 15vh;
+    }
+  }
+
+  @keyframes button {
+    from {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+

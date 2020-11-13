@@ -1,0 +1,67 @@
+.track {
+    width: 75vw;
+    margin-left: 12.5vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto;
+}
+
+.trackCover {
+    width: 15vw;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.trackCover .cover {
+    width: 15vw;
+    opacity: 0.75;
+}
+
+.trackCover .listeningIcon {
+    width: 5vw;
+    position: absolute;
+    top: 7.5vw;
+    left: 7.5vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.trackInfos {
+    font-family: 'Montserrat Bold';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    width: 40vw;
+}
+
+.trackSettings {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist {
+    font-size: 2vh;
+    color: #9BA4B4;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 2.5vh;
+    color: #F1F6F9;
+    margin: 0;
+    padding: 0;
+}
+
+.theme {
+    font-size: 1.5vh;
+    color: #9BA4B4;
+    margin: 0;
+    padding: 0;
+}

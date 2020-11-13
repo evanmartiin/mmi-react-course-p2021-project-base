@@ -1,0 +1,16 @@
+.musicTypeASMR img {
+    width: 40vw;
+    height: 12vh;
+    border-radius: 10px;
+    margin-left: 6.5vw;
+}
+
+.musicTypeASMR h1 {
+    color: #f1f6f9;
+    text-decoration: none;
+    font: 2.5vh "Lato";
+    text-align: center;
+    margin: 0;
+    margin-top: -8vh;
+    margin-left: 6.5vw;
+}

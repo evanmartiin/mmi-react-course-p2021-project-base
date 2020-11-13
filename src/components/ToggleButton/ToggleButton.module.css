@@ -1,0 +1,55 @@
+.isLikedTrue {
+    padding: 0px 0px 0px 5vh;
+    background-color: #F1F6F9;
+    border: none;
+    width: 10vh;
+    border-radius: 15vh;
+    box-sizing: border-box;
+    height: 5vh;
+    transition: 0.3s;
+}
+
+.isLikedFalse {
+    padding: 0px;
+    background-color: #14274E;
+    border: 1px solid  #F1F6F9;
+    width: 10vh;
+    border-radius: 15vh;
+    box-sizing: border-box;
+    height: 5vh;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.isLikedFalse, .isLikedTrue {
+    outline: none;
+}
+
+.isLikedFalse img, .isLikedTrue img {
+    height: 5vh;
+}
+
+.allToggleButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDiv p {
+    color: #F1F6F9;
+    font: 2vh 'Montserrat SemiBold';
+    margin: 5px 0 0 0;
+}

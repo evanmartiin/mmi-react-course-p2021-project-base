@@ -1,0 +1,91 @@
+.littlePlayer {
+    background-color: rgba(20, 39, 78, 0.9);
+    width: 100vw;
+    height: calc(6vh + 2em);
+    z-index: 100;
+    position: fixed;
+    z-index: 100;
+    bottom: calc(6vh + 2em);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.bigPlayer {
+    background-color: rgba(20, 39, 78, 0.9);
+    width: 100vw;
+    height: calc(100vh - (6vh + 2em));
+    z-index: 100;
+    position: fixed;
+    z-index: 100;
+    bottom: calc(6vh + 2em);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.toggleOpenedButton {
+    border: none;
+    background-color: transparent;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toggleOpenedButton:focus {
+    outline: none;
+}
+
+.playerCover {
+    width: 15vw !important;
+    height: 15vw !important;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0.75;
+}
+
+.playerInfos {
+    width: 30vw;
+    height: 15vw;
+    font-family: 'Montserrat Bold';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.playerSettings {
+    width: 45vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.otherButtons {
+    height: 3vh;
+}
+
+.playButton {
+    height: 5vh;
+}
+
+.playerSettings button {
+    background-color: transparent;
+    border: none;
+}
+
+.playerSettings button:focus {
+    outline: none;
+}
+
+.playerSettings button img {
+    height: 4vh;
+}
