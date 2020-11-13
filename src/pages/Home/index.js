@@ -26,11 +26,11 @@ const Home = () => {
                     <div className="preferences">
                         <div className="preferencesTop">
                             <MusicType linkTo="/form"  imageType={ASMRType} title="ASMR"/>
-                            <MusicType linkTo="/form"  imageType={meditation} title="Podcast"/>
+                            <MusicType linkTo="/form"  imageType={meditation} title="Méditation"/>
                         </div>
                         <div className="preferencesBottom">
-                            <MusicType linkTo="/form"  imageType={respiration} title="Podcast"/>
-                            <MusicType linkTo="/form"  imageType={ambiance} title="ASMR"/>
+                            <MusicType linkTo="/form"  imageType={respiration} title="Respiration"/>
+                            <MusicType linkTo="/form"  imageType={ambiance} title="Ambiance"/>
                         </div>
                     </div>
                 <div className="homeLine"><Line /></div>

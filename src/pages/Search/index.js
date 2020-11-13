@@ -30,19 +30,19 @@ const Search = (props) => {
                 <div className={isVisible ?  styles.preferencesNone : styles.preferences}>
                     <div className={styles.preferencesTop}>
                         <MusicType linkTo="/playlist"  imageType={ASMRType} title="ASMR"/>
-                        <MusicType linkTo="/playlist"  imageType={meditation} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={meditation} title="Meditation"/>
                     </div>
                     <div className={styles.preferencesBottom}>
-                        <MusicType linkTo="/playlist"  imageType={respiration} title="Podcast"/>
-                        <MusicType linkTo="/playlist"  imageType={ambiance} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={respiration} title="Respiration"/>
+                        <MusicType linkTo="/playlist"  imageType={ambiance} title="Ambiance"/>
                     </div>
                     <div className={styles.preferencesTop2}>
-                        <MusicType linkTo="/playlist"  imageType={relax} title="Relax"/>
+                        <MusicType linkTo="/playlist"  imageType={relax} title="Relaxant"/>
                         <MusicType linkTo="/playlist"  imageType={podcast} title="Podcast"/>
                     </div>
                     <div className={styles.preferencesBottom}>
-                        <MusicType linkTo="/playlist"  imageType={enfants} title="Podcasts"/>
-                        <MusicType linkTo="/playlist"  imageType={classique} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={enfants} title="Enfants"/>
+                        <MusicType linkTo="/playlist"  imageType={classique} title="Classique"/>
                     </div>
                 </div>
                 <div className={isVisible ? styles.searchPlaylist : styles.searchPlaylistNone}>
