@@ -1,0 +1,49 @@
+.trackHorizontalScroll {
+    height: 26vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    margin-left: 7vw;
+}
+
+.trackCoverHorizontalScroll {
+    width: 20vw;
+    border-radius: 15px;
+    height: 20vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.trackCoverHorizontalScroll .coverHorizontalScroll {
+    width: 20vw;
+    height: 20vw;
+    opacity: 0.75;
+}
+
+.trackCoverHorizontalScroll .listeningIcon {
+    width: 5vw;
+    position: absolute;
+    top: 7.5vw;
+    left: 7.5vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.title {
+    font-size: 2.5vh;
+    color: #F1F6F9;
+    margin: 0;
+    padding: 0;
+}
+
+.HorizontalScroll {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.trackHorizontalScroll .title {
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
