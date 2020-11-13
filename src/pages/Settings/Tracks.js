@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import { SpotifyContext } from '../../components/SpotifyProvider'
 
 const Tracks = () => {
-    const { spotifyApi, deviceId } = useContext(SpotifyContext)
+    const { spotifyApi, deviceId, token } = useContext(SpotifyContext)
+    console.log(token)
 
     const [tracks, setTracks] = useState([])
     useEffect(() => {
@@ -31,7 +32,7 @@ const Tracks = () => {
             "uris": [uri]
         }
     
-        spotifyApi.pause(data)
+        spotifyApi.paused(data)
             .then(function() {
                 console.log('pause')
             })
