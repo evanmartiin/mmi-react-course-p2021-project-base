@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { SpotifyContext } from '../../components/SpotifyProvider'
 
 const Tracks = () => {
-    const { spotifyApi } = useContext(SpotifyContext)
+    const { spotifyApi, deviceId } = useContext(SpotifyContext)
 
     const [tracks, setTracks] = useState([])
     useEffect(() => {
@@ -12,6 +12,30 @@ const Tracks = () => {
         }
         loadTracks();
     }, [spotifyApi])
+
+    const playSound = (uri) => {
+        const data = {
+            "device_id": deviceId,
+            "uris": [uri]
+        }
+    
+        spotifyApi.play(data)
+            .then(function() {
+                console.log('play')
+            })
+    }
+
+    const pauseSound = (uri) => {
+        const data = {
+            "device_id": deviceId,
+            "uris": [uri]
+        }
+    
+        spotifyApi.pause(data)
+            .then(function() {
+                console.log('pause')
+            })
+    }
     
 
     return (
@@ -21,10 +45,12 @@ const Tracks = () => {
             <ul>
                 {tracks.map((track) => {
                     return (
-                        <div>
+                        <li key={track.id}>
                             {track.name}
                             <img src={track.album.images[2].url} alt={`Cover de ${track.album.name}`}/>
-                        </div>
+                            <button onClick={() => { playSound(track.uri) }}>Play</button>
+                            <button onClick={() => { pauseSound(track.uri) }}>Pause</button>
+                        </li>
                     )
                 })}
             </ul>
