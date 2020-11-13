@@ -4,9 +4,13 @@ import React from 'react'
 import './styles.css'
 // import Img from '../../assets/images/arrow-blue.png'
 
-const ForMeButton = () => {
+const ForMeButton = (props) => {
+  const { children} = props
   return (
     <div>
+      <button className='ForMeButton'> 
+        {children}
+      </button>
     </div>
   )
 }
