@@ -31,7 +31,7 @@ const Tracks = () => {
             "uris": [uri]
         }
     
-        spotifyApi.paused(data)
+        spotifyApi.pause(data)
             .then(function() {
                 console.log('pause')
             })
