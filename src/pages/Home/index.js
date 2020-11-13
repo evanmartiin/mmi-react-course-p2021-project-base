@@ -8,23 +8,35 @@ import respiration from '../../assets/images/respiration.png'
 import meditation from '../../assets/images/meditation.png'
 import ambiance from '../../assets/images/ambiance.png'
 import Line from '../../components/Line'
+import PlaylistHorizontalScroll from '../../components/HorizontalScroll'
+import HomeTitle from '../../components/HomeTitle'
+import ForYouIcon from '../../assets/images/mixhibernation-white.png'
+import YourListenIcon from '../../assets/images/YourListen.png'
+import EyeIcon from '../../assets/images/eyeIcon.png'
+import YourPlaylist from '../../assets/images/tesplaylists-white.png'
+
 
 
 const Home = () => {
     return (
         <div className="home">
             <Layout removeReturn>
-                <div className="preferences">
-                    <div className="preferencesTop">
-                        <MusicType linkTo="/form"  imageType={ASMRType} title="ASMR"/>
-                        <MusicType linkTo="/form"  imageType={meditation} title="Podcast"/>
+                <HomeTitle icon={ForYouIcon}>Pour toi</HomeTitle>
+                    <div className="preferences">
+                        <div className="preferencesTop">
+                            <MusicType linkTo="/form"  imageType={ASMRType} title="ASMR"/>
+                            <MusicType linkTo="/form"  imageType={meditation} title="Podcast"/>
+                        </div>
+                        <div className="preferencesBottom">
+                            <MusicType linkTo="/form"  imageType={respiration} title="Podcast"/>
+                            <MusicType linkTo="/form"  imageType={ambiance} title="ASMR"/>
+                        </div>
                     </div>
-                    <div className="preferencesBottom">
-                        <MusicType linkTo="/form"  imageType={respiration} title="Podcast"/>
-                        <MusicType linkTo="/form"  imageType={ambiance} title="ASMR"/>
-                    </div>
-                </div>
                 <Line />
+                <HomeTitle icon={YourListenIcon}>Dernières écoutes</HomeTitle>
+                <PlaylistHorizontalScroll />
+                <HomeTitle icon={EyeIcon}>Dernières écoutes</HomeTitle>
+                <HomeTitle icon={YourPlaylist}>Playlists</HomeTitle>
                 <br/><Link to="/login">Login</Link>
                 <br/><Link to="/signup">Signup</Link>
                 <br/><Link to="/form">Form</Link>
