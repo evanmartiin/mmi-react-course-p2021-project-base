@@ -3,12 +3,12 @@
     height: 3vh;
     margin-left: 6.5vw;
     display: flex;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
     margin-top: 5vw;
 }
 
 .HomeTitle img {
-    width: 3vh;
+    height: 3vh;
     margin-right: 10px;
 }
 

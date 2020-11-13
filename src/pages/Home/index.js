@@ -11,8 +11,8 @@ import Line from '../../components/Line'
 import PlaylistHorizontalScroll from '../../components/HorizontalScroll'
 import HomeTitle from '../../components/HomeTitle'
 import ForYouIcon from '../../assets/images/mixhibernation-white.png'
-import YourListenIcon from '../../assets/images/YourListen.png'
-import EyeIcon from '../../assets/images/eyeIcon.png'
+import YourListenIcon from '../../assets/images/casque.png'
+import EyeIcon from '../../assets/images/eye-white.png'
 import YourPlaylist from '../../assets/images/tesplaylists-white.png'
 
 
@@ -21,6 +21,7 @@ const Home = () => {
     return (
         <div className="home">
             <Layout removeReturn>
+            <h1 className="homeTitle">Bonne nuit </h1>
                 <HomeTitle icon={ForYouIcon}>Pour toi</HomeTitle>
                     <div className="preferences">
                         <div className="preferencesTop">
@@ -32,11 +33,13 @@ const Home = () => {
                             <MusicType linkTo="/form"  imageType={ambiance} title="ASMR"/>
                         </div>
                     </div>
-                <Line />
+                <div className="homeLine"><Line /></div>
                 <HomeTitle icon={YourListenIcon}>Dernières écoutes</HomeTitle>
                 <PlaylistHorizontalScroll />
                 <HomeTitle icon={EyeIcon}>Dernières écoutes</HomeTitle>
+                <PlaylistHorizontalScroll />
                 <HomeTitle icon={YourPlaylist}>Playlists</HomeTitle>
+                <PlaylistHorizontalScroll />
                 <br/><Link to="/login">Login</Link>
                 <br/><Link to="/signup">Signup</Link>
                 <br/><Link to="/form">Form</Link>
