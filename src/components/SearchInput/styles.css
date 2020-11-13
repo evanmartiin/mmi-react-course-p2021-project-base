@@ -19,6 +19,10 @@
     height: 7vh;
 }
 
+.searchInputWhereWeClick:focus {
+    outline: none;
+}
+
 .searchInputWhereWeClick::placeholder{
     color: #F1F6F9;
 }
