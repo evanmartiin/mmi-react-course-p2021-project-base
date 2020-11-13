@@ -10,3 +10,11 @@
 .trackSettingsIcon img {
     height: 4vh;
 }
+
+.displayTrackSettingsWindow {
+    display: block;
+}
+
+.displayTrackSettingsWindowNone {
+    display: none;
+}
