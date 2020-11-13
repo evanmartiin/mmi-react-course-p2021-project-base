@@ -16,6 +16,7 @@ import titleIcon from '../../assets/images/music-note.png'
 import Like from '../Like'
 import TrackSettings from '../TrackSettings'
 import TimerButton from '../ToggleButton/TimerButton'
+import { Link } from 'react-router-dom'
 
 const Player = () => {
     const [isPaused, updateisPaused] = useState(false)
@@ -43,7 +44,7 @@ const Player = () => {
             <div className="playerInfos">
                 <button className="toggleOpenedButton" onClick={toggleOpened}>
                     <div className="playerText">
-                        <p className="playerArtist">Klingande</p>
+                        <Link to="/artist"><p className="playerArtist">Klingande</p></Link>
                         <p className="playerTitle">Alive</p>
                         <p className="playerTheme">Classique</p>
                     </div>

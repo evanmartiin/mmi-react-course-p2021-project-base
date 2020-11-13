@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import MusicType from '../../components/MusicType'
 import './styles.css'
 import ASMRType from '../../assets/images/ASMR.png'
@@ -40,11 +40,11 @@ const Home = () => {
                 <PlaylistHorizontalScroll />
                 <HomeTitle icon={YourPlaylist}>Playlists</HomeTitle>
                 <PlaylistHorizontalScroll />
-                <br/><Link to="/login">Login</Link>
+                {/* <br/><Link to="/login">Login</Link>
                 <br/><Link to="/signup">Signup</Link>
                 <br/><Link to="/form">Form</Link>
                 <br/><Link to="/entrance">Entrance</Link>
-                <br/><Link to="/artist">Artist</Link> 
+                <br/><Link to="/artist">Artist</Link>  */}
             </Layout>
         </div>
     );

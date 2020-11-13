@@ -71,7 +71,7 @@ function App() {
           <Settings />
         </Route>
           <Route path="/">
-            <Home />
+            <Entrance />
           </Route>
         </Switch>
       </BrowserRouter>
