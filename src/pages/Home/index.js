@@ -7,7 +7,6 @@ import ASMRType from '../../assets/images/ASMR.png'
 import respiration from '../../assets/images/respiration.png'
 import meditation from '../../assets/images/meditation.png'
 import ambiance from '../../assets/images/ambiance.png'
-import Tracks from './Tracks'
 
 
 const Home = () => {
@@ -29,7 +28,6 @@ const Home = () => {
                 <br/><Link to="/form">Form</Link>
                 <br/><Link to="/entrance">Entrance</Link>
                 <br/><Link to="/artist">Artist</Link> 
-                <Tracks />
             </Layout>
         </div>
     );
