@@ -27,25 +27,25 @@ const Search = (props) => {
                     <SearchInput />
                 </div>
                 <Line />
-                <div className={isVisible ? styles.preferences : styles.preferencesNone}>
+                <div className={isVisible ?  styles.preferencesNone : styles.preferences}>
                     <div className={styles.preferencesTop}>
-                        <MusicType linkTo="/form"  imageType={ASMRType} title="ASMR"/>
-                        <MusicType linkTo="/form"  imageType={meditation} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={ASMRType} title="ASMR"/>
+                        <MusicType linkTo="/playlist"  imageType={meditation} title="Podcast"/>
                     </div>
                     <div className={styles.preferencesBottom}>
-                        <MusicType linkTo="/form"  imageType={respiration} title="Podcast"/>
-                        <MusicType linkTo="/form"  imageType={ambiance} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={respiration} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={ambiance} title="Podcast"/>
                     </div>
                     <div className={styles.preferencesTop2}>
-                        <MusicType linkTo="/form"  imageType={relax} title="Relax"/>
-                        <MusicType linkTo="/form"  imageType={podcast} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={relax} title="Relax"/>
+                        <MusicType linkTo="/playlist"  imageType={podcast} title="Podcast"/>
                     </div>
                     <div className={styles.preferencesBottom}>
-                        <MusicType linkTo="/form"  imageType={enfants} title="Podcasts"/>
-                        <MusicType linkTo="/form"  imageType={classique} title="Podcast"/>
+                        <MusicType linkTo="/playlist"  imageType={enfants} title="Podcasts"/>
+                        <MusicType linkTo="/playlist"  imageType={classique} title="Podcast"/>
                     </div>
                 </div>
-                <div className={isVisible ?  styles.searchPlaylistNone : styles.searchPlaylist}>
+                <div className={isVisible ? styles.searchPlaylist : styles.searchPlaylistNone}>
                     <Playlist />
                 </div>
             </Layout>

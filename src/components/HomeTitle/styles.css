@@ -1,0 +1,19 @@
+.HomeTitle {
+    width: 75vw;
+    height: 3vh;
+    margin-left: 6.5vw;
+    display: flex;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+}
+
+.HomeTitle img {
+    height: 3vh;
+    margin-right: 10px;
+}
+
+.HomeTitle p {
+    font: 2vh 'Montserrat Bold';
+    color: #F1F6F9;
+    margin-top: 1vh;
+}

@@ -1,0 +1,19 @@
+.PageSubTitle {
+    width: 75vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vw;
+    margin-left: 20vw;
+}
+
+.PageSubTitle img {
+    width: 3vh;
+    margin-right: 5px;
+}
+
+.PageSubTitle p {
+    font: 2vh 'Montserrat SemiBold';
+    color: #F1F6F9;
+}

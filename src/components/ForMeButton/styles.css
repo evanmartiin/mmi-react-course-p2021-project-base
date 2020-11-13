@@ -1,0 +1,9 @@
+.ForMeButton {
+    background-color: transparent;
+    border : 1px solid #F1F6F9;
+    width: 70vw;
+    height: 6vh;
+    font : 20px 'Lato';
+    color : #F1F6F9;
+    border-radius: 10px;
+}
