@@ -1,0 +1,298 @@
+.littlePlayer {
+    background-color: rgba(20, 39, 78, 0.9);
+    width: 100vw;
+    height: calc(6vh + 2em);
+    z-index: 100;
+    position: fixed;
+    z-index: 100;
+    bottom: calc(6vh + 2em);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.littlePlayer *, .bigPlayer * {
+    transition: 0.5s ease;
+}
+
+.littlePlayer .playerHeader {
+    display: none;
+}
+
+.littlePlayer .toggleOpenedButton {
+    border: none;
+    background-color: transparent;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.littlePlayer .toggleOpenedButton:focus {
+    outline: none;
+}
+
+.littlePlayer .returnArrow {
+   display: none;
+}
+
+.littlePlayer .toggleOpenedArrow {
+    display: none;
+}
+
+.littlePlayer .progressBar {
+    display: none;
+}
+
+.littlePlayer .playerCover {
+    width: 15vw !important;
+    height: 15vw !important;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0.75;
+}
+
+.littlePlayer .playerInfos {
+    width: 30vw;
+    height: 15vw;
+    font-family: 'Montserrat Bold';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.littlePlayer .playerText {
+    text-align: left;
+}
+
+.littlePlayer .playerArtist {
+    font: 2vh 'Montserrat Bold' !important;
+    color: #9BA4B4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.littlePlayer .playerTitle {
+    font: 2.5vh 'Montserrat Bold' !important;
+    color: #F1F6F9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.littlePlayer .playerTheme {
+    font: 1.5vh 'Montserrat Bold' !important;
+    color: #9BA4B4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.littlePlayer .playerIcons {
+    display: none;
+}
+
+.littlePlayer .playerSettings {
+    width: 45vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.littlePlayer .otherButtons {
+    height: 3vh;
+}
+
+.littlePlayer .playButton {
+    height: 5vh;
+}
+
+.littlePlayer .playerSettings button {
+    background-color: transparent;
+    border: none;
+}
+
+.littlePlayer .playerSettings button:focus {
+    outline: none;
+}
+
+.bigPlayer {
+    background-color: rgba(20, 39, 78, 0.95);
+    width: 100vw;
+    height: calc(100vh - (6vh + 2em));
+    z-index: 100;
+    position: fixed;
+    z-index: 100;
+    bottom: calc(6vh + 2em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.bigPlayer .returnArrow {
+    width: 20px;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateZ(-90deg);
+}
+
+.bigPlayer .playerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin-top: 2vh;
+}
+
+.bigPlayer .headerTitle {
+    color: #F1F6F9;
+    font: 3vh 'Montserrat Bold';
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.bigPlayer .headerTitle img {
+    height: 6vh;
+    margin-right: 2vh;
+}
+
+.bigPlayer .toggleOpenedArrow {
+    border: none;
+    background-color: transparent;
+}
+
+.bigPlayer .toggleOpenedArrow:focus {
+    outline: none;
+}
+
+.bigPlayer .toggleOpenedButton {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.bigPlayer .toggleOpenedButton:focus {
+    outline: none;
+}
+
+.bigPlayer .playerCover {
+    width: 50vw !important;
+    height: 50vw !important;
+    overflow: hidden;
+    opacity: 0.75;
+    margin-top: 3vh;
+}
+
+.bigPlayer .playerInfos {
+    width: 70vw;
+    height: 15vw;
+    font-family: 'Montserrat Bold';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 5vh;
+}
+
+.bigPlayer .playerArtist {
+    font: 2vh 'Montserrat Bold' !important;
+    color: #9BA4B4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bigPlayer .playerTitle {
+    font: 4vh 'Montserrat Bold' !important;
+    color: #F1F6F9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bigPlayer .playerTheme {
+    display: none;
+}
+
+.bigPlayer .playerIcons {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigPlayer .progressBar {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.bigPlayer .progressLine {
+    width: 70vw;
+    height: 1vw;
+    background-color: #F1F6F9;
+    border-radius: 1vw;
+}
+
+.bigPlayer .progressTimes {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigPlayer .progressTimes p {
+    color: #F1F6F9;
+    font: 2vh 'Montserrat Bold';
+    margin: 0;
+    margin-top: 1vh;
+    padding: 0;
+}
+
+.bigPlayer .playerSettings {
+    width: 60vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.bigPlayer .otherButtons {
+    height: 5vh;
+}
+
+.bigPlayer .playButton {
+    height: 8vh;
+}
+
+.bigPlayer .playerSettings button {
+    background-color: transparent;
+    border: none;
+}
+
+.bigPlayer .playerSettings button:focus {
+    outline: none;
+}

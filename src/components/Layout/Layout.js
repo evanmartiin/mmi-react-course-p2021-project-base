@@ -6,7 +6,7 @@ import Img1 from '../../assets/images/return-white.png'
 
 import './styles.css'
 import Menu from '../Menu'
-import LittlePlayer from '../LittlePlayer'
+import Player from '../Player'
 
 const Layout = (props) => {
   const { children, removeMenu, removeReturn, backTo, currentListening } = props;
@@ -21,7 +21,7 @@ const Layout = (props) => {
         <Menu />
       }
       {currentListening &&
-        <LittlePlayer />
+        <Player />
       }
       {!removeMenu && !currentListening &&
         <div className="menuVoid1" />
