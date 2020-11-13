@@ -36,7 +36,7 @@ const Home = () => {
                 <div className="homeLine"><Line /></div>
                 <HomeTitle icon={YourListenIcon}>Dernières écoutes</HomeTitle>
                 <PlaylistHorizontalScroll />
-                <HomeTitle icon={EyeIcon}>Dernières écoutes</HomeTitle>
+                <HomeTitle icon={EyeIcon}>Découvrir</HomeTitle>
                 <PlaylistHorizontalScroll />
                 <HomeTitle icon={YourPlaylist}>Playlists</HomeTitle>
                 <PlaylistHorizontalScroll />
