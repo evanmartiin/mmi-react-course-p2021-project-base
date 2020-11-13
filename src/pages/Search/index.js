@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout'
 import ASMRType from '../../assets/images/ASMR.png'
 import respiration from '../../assets/images/respiration.png'
@@ -12,32 +12,42 @@ import classique from '../../assets/images/classique.png'
 import Line from '../../components/Line'
 import SearchInput from '../../components/SearchInput'
 import Playlist from '../../components/Playlist'
+import styles from './styles.module.css'
 
-const Search = () => {
+const Search = (props) => {
+    const [isVisible, updateisVisible] = useState(false)
+
+    const toggleVisible = () => {
+        updateisVisible(!isVisible)
+    }
     return (
         <div>
             <Layout removeReturn>
-                <SearchInput />
+                <div className="searchInputFromSearch" onClick={toggleVisible}>
+                    <SearchInput />
+                </div>
                 <Line />
-                <div className="preferences">
-                    <div className="preferencesTop">
+                <div className={isVisible ? styles.preferences : styles.preferencesNone}>
+                    <div className={styles.preferencesTop}>
                         <MusicType linkTo="/form"  imageType={ASMRType} title="ASMR"/>
                         <MusicType linkTo="/form"  imageType={meditation} title="Podcast"/>
                     </div>
-                    <div className="preferencesBottom">
+                    <div className={styles.preferencesBottom}>
                         <MusicType linkTo="/form"  imageType={respiration} title="Podcast"/>
                         <MusicType linkTo="/form"  imageType={ambiance} title="Podcast"/>
                     </div>
-                    <div className="preferencesTop2">
+                    <div className={styles.preferencesTop2}>
                         <MusicType linkTo="/form"  imageType={relax} title="Relax"/>
                         <MusicType linkTo="/form"  imageType={podcast} title="Podcast"/>
                     </div>
-                    <div className="preferencesBottom">
+                    <div className={styles.preferencesBottom}>
                         <MusicType linkTo="/form"  imageType={enfants} title="Podcasts"/>
                         <MusicType linkTo="/form"  imageType={classique} title="Podcast"/>
                     </div>
                 </div>
-                <Playlist />
+                <div className={isVisible ?  styles.searchPlaylistNone : styles.searchPlaylist}>
+                    <Playlist />
+                </div>
             </Layout>
         </div>
     );

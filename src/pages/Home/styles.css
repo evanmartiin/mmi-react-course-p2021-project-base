@@ -1,6 +1,9 @@
 .preferences {
     display: flex;
     flex-wrap: wrap;
+}
+
+.preferencesNone {
     display: none;
 }
 
@@ -18,3 +21,4 @@
     display: flex;
     margin-top: 8vh;
 }
+
