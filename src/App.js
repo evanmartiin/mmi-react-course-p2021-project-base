@@ -21,6 +21,7 @@ const spotifyClientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID
 const spotifyRedirectUri = process.env.REACT_APP_SPOTIFY_REDIRECT_URI
 
 function App() {
+  console.log(spotifyClientId, spotifyRedirectUri)
   return (
     <SpotifyProvider clientId={spotifyClientId} redirectUri={spotifyRedirectUri}>
       <BrowserRouter>
