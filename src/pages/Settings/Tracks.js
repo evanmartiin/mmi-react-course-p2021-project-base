@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { SpotifyContext } from '../../components/SpotifyProvider'
 
 const Tracks = () => {
-    const { spotifyApi, deviceId, token } = useContext(SpotifyContext)
-    console.log(token)
+    const { spotifyApi, deviceId } = useContext(SpotifyContext)
 
     const [tracks, setTracks] = useState([])
     useEffect(() => {
