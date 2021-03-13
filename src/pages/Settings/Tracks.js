@@ -7,7 +7,7 @@ const Tracks = () => {
     const [tracks, setTracks] = useState([])
     useEffect(() => {
         const loadTracks = async ()=> {
-            const results = await spotifyApi.searchTracks('jul', {limit: 5});
+            const results = await spotifyApi.searchTracks('mozart', {limit: 5});
             setTracks(results.tracks.items)
         }
         loadTracks();
