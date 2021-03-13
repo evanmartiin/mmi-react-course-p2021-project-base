@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css'
-import SpotifyProvider from 'components/SpotifyProvider';
+import { useState } from 'react'
+// import SpotifyProvider from 'components/SpotifyProvider';
 import Home from 'pages/Home'
 import Search from 'pages/Search'
 import Profile from 'pages/Profile'
@@ -17,12 +18,23 @@ import Entrance from 'pages/Entrance'
 import Artist from 'pages/Artist'
 import Settings from 'pages/Settings'
 
+
+import SpotifyContext from './Context.js'
+
 const spotifyClientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID
 const spotifyRedirectUri = process.env.REACT_APP_SPOTIFY_REDIRECT_URI
 
-function App() {
+const App = () => {
+  const [trackName, setTrackName] = useState();
+
+  const contextValue = {
+    appVersion: '1.0',
+    trackName: trackName,
+    setTrackName: setTrackName,
+  }
+
   return (
-    <SpotifyProvider clientId={spotifyClientId} redirectUri={spotifyRedirectUri}>
+    <SpotifyContext.Provider clientId={spotifyClientId} redirectUri={spotifyRedirectUri} value={contextValue}>
       <BrowserRouter>
         <Switch>
           <Route path="/home">
@@ -75,7 +87,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-    </SpotifyProvider>
+    </SpotifyContext.Provider>
   );
 }
 
